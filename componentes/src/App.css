@@ -62,3 +62,88 @@ td:nth-child(2) {
   font-size: 0.85rem;
   letter-spacing: 1px;
 }
+/* --- Estilos para los Botones y Enlaces --- */
+
+.btn-add {
+  display: inline-block;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-add:hover {
+  background-color: #218838;
+}
+
+.btn-delete {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.btn-delete:hover {
+  background-color: #cc0000;
+}
+
+/* --- Estilos para el Formulario de la página "Nuevo" --- */
+
+.form-container h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.form-container input, 
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.button-group button {
+  flex: 2;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-cancel {
+  flex: 1;
+  text-align: center;
+  background-color: #6c757d;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* --- Ajuste para la barra de búsqueda --- */
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
