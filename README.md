@@ -1,49 +1,59 @@
 # Lista de Precios - Frutas y Verduras
-Este es mi proyecto creando cun CRUD
 
-## Funcionalidades:
-- Listado de productos con categorías.
-- Formulario para agregar mercadería nueva.
-- Edición de precios y nombres.
-- Filtro por stock.
+CRUD de productos hecho con React + Vite.
 
-## Tecnologías usadas:
-- React.js
-- React Router (para la navegación)
-- Vite
+## Funcionalidades
+
+- Listado de productos con categorías
+- Formulario para agregar mercadería nueva
+- Edición de precios y nombres
+- Filtro por stock
+
+## Tecnologías usadas
+
+- React 19
+- React Router DOM 6
+- Vite 5
 - CSS3
-## 🛠️ Cómo instalar y correr el proyecto
 
-Para probar esta app en tu computadora, seguí estos pasos:
+## Requisitos
 
+> **IMPORTANTE:** Este proyecto usa **Vite 5** y **React Router DOM 6**, que son compatibles con **Node.js 18**.
+> Si instalás versiones más nuevas (Vite 8, React Router 7) vas a necesitar **Node.js 20 o superior**.
 
+Verificá tu versión de Node antes de arrancar:
 
+```bash
+node -v
+```
 
-## 🛠️ Cómo instalar y correr el proyecto
+- Node 18.x → funciona con las dependencias actuales del proyecto
+- Node 20+ o 22+ → podés usar versiones más nuevas de Vite y React Router
 
-Para probar esta app en tu computadora, seguí estos pasos:
+## Cómo instalar y correr
 
-. **Clonar el repositorio:**
+1. Clonar el repositorio:
    ```bash
-   git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/tu-usuario/tu-repositorio.git)
+   git clone <url-del-repo>
+   cd <nombre-de-la-carpeta>
+   ```
 
-  2-Entrar a la carpeta:
-    Bash
+2. Instalar dependencias:
+   ```bash
+   npm install
+   ```
 
-  3- cd nombre-de-la-carpeta
+3. Correr en modo desarrollo:
+   ```bash
+   npm run dev
+   ```
 
-  4- Instalar las dependencias (los "repuestos" necesarios):
-    (Asegurate de tener Node.js instalado)
-    Bash
+4. Abrir en el navegador: `http://localhost:5173`
 
-  5-npm install
+## Problemas conocidos
 
-  6-Arrancar el servidor de desarrollo:
-    Bash
-
-    npm run dev
-
-    ¡Listo! Abrí tu navegador en http://localhost:5173.
-
-HACER CLICK............... Y WALAAAAA.....
----
+| Error | Causa | Solución |
+|-------|-------|----------|
+| `CustomEvent is not defined` | Vite 8+ requiere Node 20+ | Bajá Vite a v5: `npm install vite@5 @vitejs/plugin-react@4 --save-dev` |
+| `react-router-dom` requiere Node 20+ | React Router 7+ requiere Node 20+ | Bajá a v6: `npm install react-router-dom@6` |
+| App en blanco sin errores | `vite.config.js` vacío o sin el plugin de React | Asegurate de tener el plugin configurado (ver `vite.config.js`) |
